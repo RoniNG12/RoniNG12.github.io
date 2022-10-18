@@ -13,7 +13,7 @@
         >
           <draggable v-model="tags" @start="dragStart" @end="dragEnd">
             <v-chip v-for="(tag, i) in tags" :key="i" draggable :color="tag.status==='wrong'?'':'green'">
-              {{ tag.name }}
+              {{ tag.name }} 
             </v-chip>
           </draggable>
         </v-chip-group>
